@@ -46,6 +46,7 @@ $font-bold: 700;
 }
 
 body {
+    cursor: default;
     margin: $header-height 0 0 0;
     font-family: var(--body-font);
     background-color: var(--black-color);
@@ -321,6 +322,7 @@ img {
     padding: 4rem 1rem;
     background-color: var(--black-color);
     color: var(--white-color);
+    cursor: default;
 }
 
 .about__content {
