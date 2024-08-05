@@ -43,6 +43,7 @@
 }
 
 body {
+  cursor: default;
   margin: 3rem 0 0 0;
   font-family: var(--body-font);
   background-color: var(--black-color);
@@ -334,6 +335,7 @@ img {
     padding: 4rem 1rem;
     background-color: var(--black-color);
     color: var(--white-color);
+    cursor: default;
 }
 
 .about__content {
