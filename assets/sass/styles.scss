@@ -310,3 +310,28 @@ img {
     background-color: var(--first-color);
     left: 66.6%;
 }
+
+/* ABOUT SECTION */
+.about {
+    max-height: 100vh;
+    padding: 4rem 1rem;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.about__content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.about__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 1rem;
+}
+
+.about__description {
+    font-size: var(--normal-font-size);
+    line-height: 1.5;
+
