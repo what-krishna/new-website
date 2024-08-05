@@ -34,4 +34,4 @@ gsap.from('.home__social-icon', { opacity: 0, duration: 3, delay: 4, y: 25, ease
 
 // ABOUT SECTION ANIMATION
 gsap.from('.about__title', { opacity: 0, duration: 2, delay: 1, y: 25 });
-gsap.from('.about__text', { opacity: 0, duration: 2, delay: 1.5, y: 25 });
+gsap.from('.about__description', { opacity: 0, duration: 2, delay: 1.5, y: 25 });
