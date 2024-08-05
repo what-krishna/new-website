@@ -43,7 +43,6 @@
 }
 
 body {
-  cursor: none;
   margin: 3rem 0 0 0;
   font-family: var(--body-font);
   background-color: var(--black-color);
@@ -328,7 +327,6 @@ img {
 
 /* ABOUT SECTION */
 .about {
-    cursor: none;
     height: 100vh; /* Occupy the whole screen */
     display: flex; /* Flexbox to center content */
     justify-content: center; /* Center horizontally */
