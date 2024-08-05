@@ -46,6 +46,7 @@ $font-bold: 700;
 }
 
 body {
+    cursor: none;
     margin: $header-height 0 0 0;
     font-family: var(--body-font);
     background-color: var(--black-color);
