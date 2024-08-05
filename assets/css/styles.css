@@ -326,7 +326,10 @@ img {
 
 /* ABOUT SECTION */
 .about {
-    min-height: 100vh;
+    height: 100vh; /* Occupy the whole screen */
+    display: flex; /* Flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     padding: 4rem 1rem;
     background-color: var(--black-color);
     color: var(--white-color);
