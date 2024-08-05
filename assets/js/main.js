@@ -31,19 +31,3 @@ gsap.from('.nav__item', { opacity: 0, duration: 3, delay: 3.2, y: 25, ease: 'exp
 
 // SOCIAL
 gsap.from('.home__social-icon', { opacity: 0, duration: 3, delay: 4, y: 25, ease: 'expo.out', stagger: .2 });
-
-// ABOUT SECTION ANIMATION
-gsap.from('.about__title', {
-    opacity: 0,
-    duration: 2,
-    delay: 1,
-    y: 25,
-    onComplete: () => console.log('About title animation completed')
-});
-gsap.from('.about__description', {
-    opacity: 0,
-    duration: 2,
-    delay: 1.5,
-    y: 25,
-    onComplete: () => console.log('About text animation completed')
-});
