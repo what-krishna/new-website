@@ -162,6 +162,7 @@ img {
 }
 
 .home {
+    cursor: none;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: max-content max-content;
@@ -314,6 +315,7 @@ img {
 
 /* ABOUT SECTION */
 .about {
+    cursor: none;
     height: 100vh; /* Occupy the whole screen */
     display: flex; /* Flexbox to center content */
     justify-content: center; /* Center horizontally */
