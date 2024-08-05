@@ -167,6 +167,7 @@ img {
 }
 
 .home {
+  cursor: none;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -327,6 +328,7 @@ img {
 
 /* ABOUT SECTION */
 .about {
+    cursor: none;
     height: 100vh; /* Occupy the whole screen */
     display: flex; /* Flexbox to center content */
     justify-content: center; /* Center horizontally */
