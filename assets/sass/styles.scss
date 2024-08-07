@@ -340,4 +340,13 @@ img {
 .about__description {
     font-size: var(--normal-font-size);
     line-height: 1.5;
+    }
+
+.about__photo {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Ensure the height matches the width to maintain the circle shape */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the entire circle area without distortion */
+    margin-bottom: 20px; /* Adds some space below the photo */
+}
 
