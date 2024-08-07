@@ -1,15 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-/*----- VARIABLES CSS Y SASS -----*/
-/*Varibles sass*/
-/*Variables css*/
-/*Colores*/
+
+/*----- VARIABLES CSS -----*/
+/*Colors*/
 :root {
   --first-color: #4E1116;
   --black-color: #000;
   --white-color: #FFF;
 }
 
-/*Fuente y tipografia*/
+/*Fonts and Typography*/
 :root {
   --body-font: 'Poppins', sans-serif;
   --h1-font-size: 2.5rem;
@@ -27,7 +26,7 @@
   }
 }
 
-/*z index*/
+/*Z-Index*/
 :root {
   --z-back: -10;
   --z-normal: 1;
@@ -38,8 +37,7 @@
 
 /*----- BASE -----*/
 *, ::before, ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -91,15 +89,9 @@ img {
 /*Nav*/
 .nav {
   height: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   font-weight: 700;
 }
 
@@ -108,13 +100,11 @@ img {
     position: fixed;
     top: -100%;
     left: 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--black-color)), to(var(--first-color)));
     background-image: linear-gradient(var(--black-color), var(--first-color));
     width: 100%;
     height: 45%;
     padding: 1.5rem;
     border-radius: 0 0 1rem 1rem;
-    -webkit-transition: .5s;
     transition: .5s;
   }
 }
@@ -128,11 +118,7 @@ img {
 }
 
 .nav__link {
-  color: var(--text-color);
-}
-
-.nav__link:hover {
-  position: relative;
+  color: var(--white-color);
 }
 
 .nav__link:hover::after {
@@ -155,7 +141,6 @@ img {
   cursor: pointer;
 }
 
-/*Aparecer menu*/
 .show {
   top: 3rem;
 }
@@ -167,16 +152,10 @@ img {
 }
 
 .home {
-  cursor: none;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: max-content max-content;
-      grid-template-rows: -webkit-max-content -webkit-max-content;
-      grid-template-rows: max-content max-content;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content max-content;
+  align-content: space-around;
   row-gap: 2.3rem;
   height: 100%;
   font-weight: 700;
@@ -207,7 +186,6 @@ img {
   color: var(--white-color);
   padding: .625rem 1rem;
   border-radius: .25rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--black-color)), to(var(--first-color)));
   background-image: linear-gradient(to right, var(--black-color), var(--first-color));
 }
 
@@ -220,13 +198,8 @@ img {
 }
 
 .home__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-bottom: 1rem;
 }
 
@@ -240,7 +213,6 @@ img {
   color: var(--first-color);
 }
 
-/*----- MEDIA QUERIES -----*/
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -252,8 +224,6 @@ img {
     height: 4rem;
   }
   .nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding-top: 0;
   }
@@ -268,20 +238,14 @@ img {
     text-transform: initial;
   }
   .home {
-    -ms-grid-rows: max-content 20px;
-        grid-template-rows: -webkit-max-content 20px;
-        grid-template-rows: max-content 20px;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    grid-template-rows: max-content 20px;
+    align-content: center;
   }
   .home__information {
     margin-top: 2rem;
   }
   .home__social {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     padding-top: 8rem;
     padding-bottom: 0;
   }
@@ -328,46 +292,63 @@ img {
 
 /* ABOUT SECTION */
 .about {
-    height: 100vh; /* Occupy the whole screen */
-    display: flex; /* Flexbox to center content */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding: 4rem 1rem;
-    background-color: var(--black-color);
-    color: var(--white-color);
-    cursor: default;
+  position: relative;
+  height: 100vh; /* Occupy the whole screen */
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 4rem 1rem;
+  color: var(--white-color);
+  cursor: default;
 }
 
-.about__content {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.about__title {
-    font-size: var(--h1-font-size);
-    margin-bottom: 1rem;
-}
-
-.about__description {
-    font-size: var(--normal-font-size);
-    line-height: 1.5;
-}
-
-.about__photo {
-    width: 150px; /* Adjust the size as needed */
-    height: 150px; /* Ensure the height matches the width to maintain the circle shape */
-    border-radius: 50%;
-    object-fit: cover; /* Ensures the image covers the entire circle area without distortion */
-    margin-bottom: 20px; /* Adds some space below the photo */
+.about__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: var(--z-back); /* Send video behind content */
+  overflow: hidden;
 }
 
 .about__video {
-    width: 100%; /* Adjust the size as needed */
-    max-width: 600px; /* Maximum width of the video */
-    margin-top: 20px; /* Adds some space above the video */
-    border: 2px solid #ccc; /* Optional: Add a border to the video */
-    border-radius: 10px; /* Optional: Add rounded corners to the video */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the whole area */
 }
 
+.about__content {
+  position: relative;
+  z-index: var(--z-normal); /* Ensure content is above video */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 1rem;
+}
+
+.about__description {
+  font-size: var(--normal-font-size);
+  line-height: 1.5;
+}
+
+.about__photo {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Ensure the height matches the width to maintain the circle shape */
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image covers the entire circle area without distortion */
+  margin-bottom: 20px; /* Adds some space below the photo */
+}
+
+.about__video-foreground {
+  width: 100%; /* Adjust the size as needed */
+  max-width: 600px; /* Maximum width of the video */
+  margin-top: 20px; /* Adds some space above the video */
+  border: 2px solid #ccc; /* Optional: Add a border to the video */
+  border-radius: 10px; /* Optional: Add rounded corners to the video */
+}
