@@ -363,3 +363,11 @@ img {
     margin-bottom: 20px; /* Adds some space below the photo */
 }
 
+.about__video {
+    width: 100%; /* Adjust the size as needed */
+    max-width: 600px; /* Maximum width of the video */
+    margin-top: 20px; /* Adds some space above the video */
+    border: 2px solid #ccc; /* Optional: Add a border to the video */
+    border-radius: 10px; /* Optional: Add rounded corners to the video */
+}
+
